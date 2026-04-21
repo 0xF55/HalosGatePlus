@@ -114,7 +114,7 @@ VOID GateInitCall(GateCallCtx* ctx, UINT32 funcHash) {
 			// mov r10,rcx
 			// mov eax,...
 			if (
-				*(funcAddress) == 0x4D &&
+				*(funcAddress) == 0x4C &&
 				*(funcAddress + 1) == 0x8B &&
 				*(funcAddress + 2) == 0xD1 &&
 				*(funcAddress + 3) == 0xB8
