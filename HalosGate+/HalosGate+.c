@@ -87,7 +87,7 @@ VOID GateInitCall(GateCallCtx* ctx, UINT32 funcHash) {
 
 		// found hash
 		if (ctx->Cache[i].hash == funcHash) {
-			printf("[+] Found cached\n");
+			//printf("[+] Found cached\n");
 			ctx->wSSN = ctx->Cache[i].ssn; // init syscall
 			GateInit(ctx->wSSN);
 			return; // back
